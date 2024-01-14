@@ -1,0 +1,88 @@
+.profile {
+  width: 600px;
+  margin: 0 auto;
+  border: 2px solid #212121;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  background-color: gray;
+  margin: 10px auto;
+  width: 300px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.avatar:hover,
+.avatar:focus {
+  scale: 1.1;
+}
+
+.name {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+
+.tag {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 500;
+  color: gray;
+}
+
+.location {
+  composes: tag;
+  font-weight: 700;
+}
+
+.stats {
+  font-size: 30px;
+  display: flex;
+  border-top: 2px solid gray;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(202, 167, 77);
+}
+
+.stats > li {
+  padding: 5px 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats > li:not(:last-child) {
+  border-right: 2px solid gray;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.value {
+  font-weight: bold;
+}
+
+.name:hover,
+.tag:hover,
+.label:hover,
+.icon:hover,
+.location:hover,
+.value:hover,
+.name:focus,
+.tag:focus,
+.label:focus,
+.icon:focus,
+.location:focus,
+.value:focus {
+  color: rgb(109, 91, 1);
+}
