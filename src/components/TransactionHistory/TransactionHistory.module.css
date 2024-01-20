@@ -25,3 +25,7 @@
 .transactionHistory tr:nth-child(even) {
   background-color: #d8d7c0;
 }
+
+td {
+  text-transform: capitalize;
+}
